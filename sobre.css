@@ -1,0 +1,93 @@
+body{
+    background-color: rgba(34, 34, 34, 0.86);
+    color: white;
+    font-family:"arial", "verdana", "sans-serif";
+    max-width:  1200px; 
+    margin: 0 auto;
+    padding: -0px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+title{
+    flex-direction: column;
+    line-height: 10px;    
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+}
+
+a{
+    color: white;
+}
+
+a :hover{
+    color: rgb(183, 108, 226);
+    transition: 0.3s all;
+}
+
+#Falar-btn{
+    border: 2px solid rgb(132, 14, 201);
+    padding: 30px;
+    border-radius: 15px; 
+} 
+
+h1{
+    font-weight: 1800;
+    color: rgb(183, 108, 226)    
+}
+
+main{
+    display:flex;
+    justify-content:space-around;
+    flex-direction:row;
+    margin-top: 50px;    
+}
+h2{
+    font-size: 60px;
+    line-height: 80px;
+    font-family: "arial", "verdana", "sans-serif";    
+}
+
+span{
+    color:rgb(183, 108, 226);
+}
+p{
+    line-height: 20px;
+    max-width: 500px;
+    font-family:"arial", "verdana", "sans-serif";    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+form [type="submit"]{
+    height: 80px;
+    width: 80%;
+    background-color: rgb(132, 14, 201);
+    color: white;
+    font-weight: bold;
+}
+
+form [type="submit"]{
+cursor: pointer;
+}
+
+input{
+    margin-top: 25px;
+    height: 50px;
+    padding: 15px;
+    border-radius: 60px;
+    border: none;
+    font-size: 15px;
+
+}

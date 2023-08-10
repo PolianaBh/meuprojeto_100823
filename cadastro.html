@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Digital_Marketing_logo-removebg-preview.png" type="image/x-icon">
+    <link href="styles.css" rel="stylesheet">
+    <link href="fonts.css" rel="stylesheet">
+    <link href="media.css" rel="stylesheet">
+  <title>Cadastro</title>
+</head>
+<body>
+    <header> <!--Menu-->
+        <img src="Digital_Marketing-removebg-preview.png" alt=”Logotipo” width=240 height=280>
+        <ul>
+            <a href="home.html"><li>Início</li></a>
+            <a href="serviços.html"><li>Serviços</li></a>
+            <a href="sobre.html"><li>Sobre</li></a>
+            <a href="contato.html"><li>Contato</li></a>
+            <a href="cadastro.html" id="Cadastre-se-btn"><li>Cadastre-se</li></a>
+            <a href="index.html" id="Inscreva-se-btn"><li>Materiais Gratuitos</li></a>
+            
+        </ul>
+    </header>
+<h1>Formulário de Cadastro</h1>
+
+<form id="meuFormulario">
+  <label for="nome">Nome:</label>
+  <input type="text" id="nome" name="nome" required><br><br>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <label for="celular">Celular:</label>
+  <input type="celular" id="celular" name="celular" required><br><br>
+
+  <button type="submit">Cadastrar</button>
+</form>
+
+<div id="mensagem"></div>
+
+<script>
+  const formulario = document.getElementById('meuFormulario');
+  const mensagemDiv = document.getElementById('mensagem');
+
+  formulario.addEventListener('submit', function(evento) {
+    evento.preventDefault(); // Impede que o formulário seja enviado
+
+    const nome = formulario.nome.value;
+    const email = formulario.email.value;
+    const celular = formulario.celular.value;
+
+    
+
+    const mensagem = `Obrigado, ${nome}! Seu email (${email}), celular (${celular}) foram cadastrados com sucesso! Em breve entraremos em contato.`;
+    mensagemDiv.textContent = mensagem;
+
+    formulario.reset(); // Limpa os campos do formulário
+  });
+</script>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</body>
+</html>
